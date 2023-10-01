@@ -13,3 +13,10 @@
 @import url('./your-order.css');
 @import url('./testimonials.css');
 @import url('./footer.css');
+
+:root {
+  --white: #fcf9f9;
+  --yellow: #ecd979;
+  --gray: rgba(252, 249, 249, 0.5);
+  --black: #1c2225;
+}
