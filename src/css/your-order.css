@@ -1,17 +1,16 @@
 .your-order {
     min-width: 320px;
     max-width: 375px;
-
 }
 .your-order-bg{
 
-background-image: url(../img/your-order/yorder-bg-mob-min.jpg);
 }
-.container1 {
+.container {
+    background-color: black;
 
 }
 .order-title {
-    color: var(--white, #FCF9F9);
+    color: #FCF9F9;
 
 
 }
