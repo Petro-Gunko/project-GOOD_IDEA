@@ -146,6 +146,11 @@
 
     width: 768px;
     margin: 0 auto;
+    background-image: url(../img/your-order/elements-min.png);
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: -700px;
+  background-size: cover;
   }
   .your-order-bg {
     max-width: none;
@@ -192,7 +197,7 @@ width: 542px;
 
 }
 
-.yorder-bg-fon {
+/* .yorder-bg-fon {
   display: flex;
   width: 554px;
   height: 483px;
@@ -202,7 +207,7 @@ width: 542px;
   background-position-x: 0px;
   background-position-y: -700px;
   background-size: cover;
-}
+} */
 .yorder-img {
   display: flex;
   padding-top: 100px;
