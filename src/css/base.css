@@ -1,5 +1,5 @@
 .container {
-    mix-width: 320px;
+    min-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
@@ -9,12 +9,12 @@
    @media screen and (min-width: 375px) {
     .container {
      width: 375px;
-    }
+     }
    }
       
    @media screen and (min-width: 768px) {
     .container {
-     max-width: 768px;
+     width: 768px;
      padding-left: 32px;
      padding-right: 32px;
     }
@@ -22,7 +22,7 @@
    
    @media screen and (min-width: 1158px) {
     .container {
-     max-width: 1120px;
+     width: 1120px;
      padding-left: 20px;
      padding-right: 20px;
     }
@@ -30,7 +30,7 @@
 
    @media screen and (min-width: 1440px) {
     .container {
-     max-width: 1280px;
+     width: 1280px;
      padding-left: 20px;
      padding-right: 20px;
     }
