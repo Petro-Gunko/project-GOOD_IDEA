@@ -1,0 +1,128 @@
+.testimonials {
+    background-color: var(--black);
+}
+
+.testimonials-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.testimonials-title {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.96px;
+    padding-bottom: 64px;
+}
+
+.all-testimonials-list {
+    align-items: center;
+    padding-left: 0;
+}
+
+.testimonial-1 {
+    border-radius: 4px;
+    border: 1px solid var(--gray);
+    position: relative;
+}
+
+.testimonial-name-description {
+    margin-top: 54px;
+}
+
+.testimonial-2 {
+    display: none;
+}
+
+.testimonial-3 {
+    display: none;
+}
+
+.testimonial-list-img {
+    z-index: 1;
+    position: absolute;
+    top: -14px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.testimonial-img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-name {
+    color: var(--white);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-bottom: 8px;
+}
+
+.testimonial-description {
+    color: var(--gray);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .testimonials-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .all-testimonials-list {
+        display: flex;
+        gap: 32px;
+
+    }
+
+    .testimonial-1 {
+        width: 300px;
+    }
+
+    .testimonial-2 {
+        display: initial;
+        border-radius: 4px;
+        border: 1px solid var(--gray);
+        position: relative;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .testimonials-container {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .testimonial-1 {
+        width: 360px;
+    }
+
+    .testimonial-2 {
+        width: 360px;
+    }
+
+    .testimonial-3 {
+        display: initial;
+        border-radius: 4px;
+        border: 1px solid var(--gray);
+        position: relative;
+        width: 360px;
+    }
+
+    .all-testimonials-list {
+        gap: 26px;
+    }
+}
