@@ -1,7 +1,14 @@
 .hero-section {
   background-color: #1c2225;
+  min-width: 375px;
+  padding-bottom: 80px;
+}
+.hero-container {
+  margin: 0 auto;
 }
 .hero-heading {
+  margin-left: 20px;
+  margin-right: 20px;
   color: var(--white);
   font-size: 44px;
   font-style: normal;
@@ -48,10 +55,9 @@
   border-radius: 4px;
 }
 .hero-handmade-sign {
-  display: none;
   width: 115px;
 }
-.hero-box-group-img {
+.hero-wrapper-side-img {
   display: none;
 }
 .hero-btn:hover,
@@ -62,8 +68,18 @@
 
 /* =============================== */
 
+@media screen and (min-width: 375px) {
+  .hero-container {
+    width: 375px;
+    margin: 0 auto;
+  }
+}
+
+/* =============================== */
+
 @media screen and (min-width: 768px) {
   .hero-container {
+    width: 786px;
     position: relative;
   }
   .hero-heading {
