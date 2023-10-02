@@ -1,0 +1,54 @@
+/* OUR-COLLECTION */
+.our-collection {
+    padding-top: 18px;
+    padding-bottom: 60px;
+    background-color: var(--black);
+}
+
+/* .container {
+    
+} */
+
+.our-collection-section-title{
+    color: var(--white);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.37;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.our-collection-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.our-collection-list-container{
+    padding-top: 18px;
+    padding-bottom: 20px;
+}
+
+.our-collection-list-title{
+    overflow: hidden;
+    color: var(--white);
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.our-collection-list-price {
+    color: var(--gray);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.05em;
+}
