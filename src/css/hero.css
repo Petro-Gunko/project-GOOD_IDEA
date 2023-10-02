@@ -63,6 +63,9 @@
 /* =============================== */
 
 @media screen and (min-width: 768px) {
+  .hero-section {
+    padding-bottom: 100px;
+  }
   .hero-container {
     display: flex;
     flex-direction: row;
@@ -109,6 +112,9 @@
 /* =============================== */
 
 @media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-bottom: 150px;
+  }
   .hero-container {
     gap: 15px;
   }
@@ -127,5 +133,17 @@
   }
   .hero-box-image {
     padding-left: 0;
+  }
+}
+
+/* ============================ */
+
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    gap: 61px;
+  }
+  .hero-heading {
+    width: 632px;
+    padding-top: 66px;
   }
 }
