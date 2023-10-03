@@ -1,16 +1,9 @@
 .hero-section {
-  background-color: #1c2225;
+  padding-bottom: 80px;
 }
-.hero-container {
-  margin: 0 auto;
-}
-.hero-heading {
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 60px;
 
-  color: #fcf9f9;
-  font-family: Manrope;
+.hero-heading {
+  color: var(--white);
   font-size: 44px;
   font-style: normal;
   font-weight: 400;
@@ -18,19 +11,11 @@
   letter-spacing: -0.03em;
 }
 .hero-heading-span {
-  color: #ecd979;
-}
-.hero-handmade-sign {
-  display: none;
-  width: 115px;
+  color: var(--yellow);
 }
 .hero-paragraph {
   color: rgba(252, 249, 249, 0.4);
   text-align: center;
-  font-family: Manrope;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
   letter-spacing: -0.04em;
 }
@@ -46,11 +31,9 @@
   padding: 14px 36px;
   gap: 10px;
   border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
+  border: 1px solid var(--gray);
   color: var(--white, #fcf9f9);
-  background-color: #1c2225;
-  font-family: Manrope;
-  font-size: 16px;
+  background-color: var(--black);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -59,14 +42,14 @@
 }
 .hero-box-image {
   margin-top: 40px;
-  /* max-width: 335px; */
-  padding-right: 20px;
-  padding-left: 20px;
 }
 .hero-img {
   border-radius: 4px;
 }
-.hero-box-group-img {
+.hero-handmade-sign {
+  width: 115px;
+}
+.hero-wrapper-side-img {
   display: none;
 }
 .hero-btn:hover,
@@ -77,42 +60,31 @@
 
 /* =============================== */
 
-@media screen and (min-width: 375px) {
-  .hero-container {
-    width: 375px;
-    margin: 0 auto;
-  }
-}
 /* =============================== */
 
 @media screen and (min-width: 768px) {
+  .hero-section {
+    padding-bottom: 100px;
+  }
   .hero-container {
-    width: 768px;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 25px;
   }
   .hero-heading {
-    margin-left: 32px;
     margin-right: 0;
-    padding-top: 106px;
     width: 549px;
     font-size: 54px;
     line-height: 1.18em;
     letter-spacing: -0.03em;
   }
-  .hero-handmade-sign {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    position: absolute;
-    top: 80px;
-    right: 32px;
-  }
-  .hero-wrapper-heading {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-  }
+
   .hero-btn {
     margin-top: 40px;
     margin-left: 173px;
@@ -120,57 +92,60 @@
     padding: 14px 39px;
   }
   .hero-box-image {
-    margin-top: 40px;
-    /* max-width: 413px; */
-    padding-right: 32px;
+    margin-top: 0;
+  }
+
+  .hero-wrapper-side-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero-handmade-sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
   .hero-box-group-img {
-    display: block;
-    width: 157px;
-    position: absolute;
-    bottom: -112px;
-    right: 23px;
-  }
-  .hero-wrapper-content-img {
-    display: flex;
-    flex-direction: row;
-    gap: 143px;
-    position: relative;
+    width: 139px;
+    height: 100px;
   }
 }
 /* =============================== */
 
 @media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-bottom: 150px;
+  }
   .hero-container {
-    width: 1280px;
-    position: relative;
+    gap: 15px;
+  }
+  .hero-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
   }
   .hero-heading {
     width: 518px;
     margin-left: 0;
-    margin-top: 194px;
-    padding-top: 0;
+    padding-top: 94px;
   }
-  .hero-wrapper-heading {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: flex-end;
-    margin-right: 100px;
-  }
-  .hero-handmade-sign {
-    position: initial;
-    margin-top: 114px;
-  }
-
   .hero-btn {
-    margin-right: 439px;
-    margin-left: auto;
+    margin-left: 181px;
   }
   .hero-box-image {
-    padding-left: 100px;
+    padding-left: 0;
   }
-  .hero-box-group-img {
-    right: 100px;
+}
+
+/* ============================ */
+
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    gap: 61px;
+  }
+  .hero-heading {
+    width: 632px;
+    padding-top: 66px;
   }
 }

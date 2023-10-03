@@ -1,13 +1,8 @@
 /* OUR-COLLECTION */
 .our-collection {
-    padding-top: 18px;
     padding-bottom: 60px;
     background-color: var(--black);
 }
-
-/* .container {
-    
-} */
 
 .our-collection-section-title{
     color: var(--white);
@@ -23,6 +18,8 @@
 .our-collection-img {
     max-width: 100%;
     height: auto;
+    border-radius: 4px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 
 .our-collection-list-container{
@@ -52,3 +49,113 @@
     line-height: 1;
     letter-spacing: 0.05em;
 }
+
+
+@media screen and (min-width: 768px) {
+    
+    .our-collection {
+            padding-bottom: 100px;
+            background-color: var(--black);
+        }
+
+    .our-collection-section-title {
+            color: var(--white);
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.45;
+            letter-spacing: -0.03em;
+        }
+    
+    .our-collection-list {
+            max-width: 768px;
+            display: flex;
+            flex-flow: row wrap;
+            column-gap: 20px;
+        }
+
+    .our-portfolio-list-item {
+            width: calc((100% - 40px) / 2);
+        }
+
+    .our-collection-list-title {
+            width: 342px;
+            overflow: hidden;
+            color: var(--white);
+            text-overflow: ellipsis;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+ 
+    
+    .our-collection-list-price {
+            color: var(--gray);
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: 0.05em;
+        } 
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    .our-collection {
+            padding-bottom: 150px;
+        }
+
+    .our-collection-section-title {
+            color: var(--white);
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.45;
+            letter-spacing: -0.03em;
+        }
+
+    .our-collection-list {
+            max-width: 1280px;
+            display: flex;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+    
+    .our-collection-list-item {
+            width: calc((100% - 40px) / 3);
+        }
+
+    .our-collection-list-title {
+            width: 342px;
+            overflow: hidden;
+            color: var(--white);
+            text-overflow: ellipsis;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+    
+    
+    .our-collection-list-price {
+            color: var(--gray);
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: 0.05em;
+        }
+}
+
+
+
+
+
