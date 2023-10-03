@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project-GOOD_IDEA/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    />
-    
-    <script type="module" crossorigin src="/project-GOOD_IDEA/assets/index-83699098.js"></script>
-    <link rel="stylesheet" href="/project-GOOD_IDEA/assets/index-640d1e59.css">
-  </head>
-  <body>
-    <!-- Edward -->
-    <header class="header">
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/project-GOOD_IDEA/assets/favicon-f4da48f5.svg">
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <title>Vyshyvanka Vibes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+  
+
+  <script type="module" crossorigin src="/project-GOOD_IDEA/assets/index-83699098.js"></script>
+  <link rel="stylesheet" href="/project-GOOD_IDEA/assets/index-640d1e59.css">
+</head>
+
+<body>
+  <!-- Edward -->
+  <header class="header">
 
   <div class="header-div-one">
     <nav class="nav">
@@ -89,48 +89,51 @@
 </header>
 
 
-    <!-- Elena -->
-    <section class="hero-section container">
-    <div class="hero-container">
-        <div class="hero-wrapper">
-            <div class="hero-wrapper-heading-and-btn">
-                <div class="hero-wrapper-heading">
-                    <h1 class="hero-heading">Reviving the traditional <span class="hero-heading-span">Ukrainian</span>
-                        artistry
-                        in
-                        every
-                        stitch.</h1>
+  <!-- Elena -->
+  <div class="container">
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-wrapper">
+                <div class="hero-wrapper-heading-and-btn">
+                    <div class="hero-wrapper-heading">
+                        <h1 class="hero-heading">Reviving the traditional <span
+                                class="hero-heading-span">Ukrainian</span>
+                            artistry
+                            in
+                            every
+                            stitch.</h1>
+                    </div>
+                    <div class="hero-wrapper-btn">
+                        <a href="#your-order"><button class="hero-btn" type="button">Order<svg class="hero-icon-btn"
+                                    width="26" height="10" aria-label="icon for order button">
+                                    <use href="/project-GOOD_IDEA/assets/sprite-icons-a8e56f60.svg#icon-arrow-btn"></use>
+                                </svg></button></a>
+                    </div>
                 </div>
-                <div class="hero-wrapper-btn">
-                    <a href="#your-order"><button class="hero-btn" type="button">Order<svg class="hero-icon-btn"
-                                width="26" height="10" aria-label="icon for order button">
-                                <use href="/project-GOOD_IDEA/assets/sprite-icons-a8e56f60.svg#icon-arrow-btn"></use>
-                            </svg></button></a>
-                </div>
-            </div>
 
-            <div class="hero-box-image"><img class="hero-img" srcset="/project-GOOD_IDEA/assets/hero-grey-shirt-mob-1885ac30.jpg 335w, /project-GOOD_IDEA/assets/hero-grey-shirt-mob@2x-71d08907.jpg 670w, /project-GOOD_IDEA/assets/hero-grey-shirt-tablet-036a0172.jpg 413px, /project-GOOD_IDEA/assets/hero-grey-shirt-tablet@2x-8a6a51e2.jpg 826px, /project-GOOD_IDEA/assets/hero-grey-shirt-desk1280-db65020d.jpg 392px, /project-GOOD_IDEA/assets/hero-grey-shirt-desk1280@2x-f0086ba8.jpg 784px" sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px,
+                <div class="hero-box-image"><img class="hero-img" srcset="/project-GOOD_IDEA/assets/hero-grey-shirt-mob-1885ac30.jpg 335w, /project-GOOD_IDEA/assets/hero-grey-shirt-mob@2x-71d08907.jpg 670w, /project-GOOD_IDEA/assets/hero-grey-shirt-tablet-036a0172.jpg 413px, /project-GOOD_IDEA/assets/hero-grey-shirt-tablet@2x-8a6a51e2.jpg 826px, /project-GOOD_IDEA/assets/hero-grey-shirt-desk1280-db65020d.jpg 392px, /project-GOOD_IDEA/assets/hero-grey-shirt-desk1280@2x-f0086ba8.jpg 784px" sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px,
         (min-width: 375px) 335px" src="./img/hero/grey-shirt-mob-min.jpg" alt="grey shirt" />
-            </div>
-        </div>
-        <div class="hero-wrapper-side-img">
-            <div class="hero-handmade-sign">
-                <div class="hero-container-for-icon">
-                    <svg class="hero-icon" width="52" height="51" aria-label="icon for hanmade sign">
-                        <use href="/project-GOOD_IDEA/assets/sprite-icons-a8e56f60.svg#icon-yellow-star"></use>
-                    </svg>
                 </div>
-                <p class="hero-paragraph">all embroidery is made by hand</p>
             </div>
-            <div class="hero-box-group-img"><img srcset="/project-GOOD_IDEA/assets/hero-group-img-13997c8b.png 139w, /project-GOOD_IDEA/assets/hero-group-img@2x-55ed2b7c.png 278w" sizes="(max-width: 767px) 139px" src="/project-GOOD_IDEA/assets/hero-group-img-13997c8b.png"
-                    alt="grey shirt" />
+            <div class="hero-wrapper-side-img">
+                <div class="hero-handmade-sign">
+                    <div class="hero-container-for-icon">
+                        <svg class="hero-icon" width="52" height="51" aria-label="icon for hanmade sign">
+                            <use href="/project-GOOD_IDEA/assets/sprite-icons-a8e56f60.svg#icon-yellow-star"></use>
+                        </svg>
+                    </div>
+                    <p class="hero-paragraph">all embroidery is made by hand</p>
+                </div>
+                <div class="hero-box-group-img"><img srcset="/project-GOOD_IDEA/assets/hero-group-img-13997c8b.png 139w, /project-GOOD_IDEA/assets/hero-group-img@2x-55ed2b7c.png 278w" sizes="(max-width: 767px) 139px" src="/project-GOOD_IDEA/assets/hero-group-img-13997c8b.png"
+                        alt="grey shirt" />
+                </div>
             </div>
-        </div>
 
-    </div>
-</section>
-    <!-- Oleksandr Nikolenko -->
-     <!----------- About Us-------------->
+        </div>
+    </section>
+</div>
+  <!-- Oleksandr Nikolenko -->
+   <!----------- About Us-------------->
 
  <div class="container">
  <section class="about-us-section">
@@ -176,8 +179,8 @@
 
 </div>
     <!-----------END About US-------------->
-    <!-- Oleksandr -->
-    <!-- OUR-COLLECTION -->
+  <!-- Oleksandr -->
+  <!-- OUR-COLLECTION -->
 <section class="our-collection">
   <div class="container">
     <h2 class="our-collection-section-title" id="our-collection-section-title">
@@ -275,8 +278,8 @@
   </div>
 </section>
 
-    <!-- Stanislav -->
-    <section class="your-order">
+  <!-- Stanislav -->
+  <section class="your-order">
   <div class="your-order-bg"></div>
   <div class="yorder-container">
     <div>
@@ -363,8 +366,8 @@
   </div>
 </section>
 
-    <!-- Anastasia -->
-    <section class="testimonials">
+  <!-- Anastasia -->
+  <section class="testimonials">
     <div class="testimonials-container container">
         <h2 class="testimonials-title">Testimonials</h2>
         <ul class="all-testimonials-list list">
@@ -413,8 +416,8 @@
         </ul>
     </div>
 </section>
-    <!-- Oleksandr Sokolovskyi -->
-    
+  <!-- Oleksandr Sokolovskyi -->
+  
     <footer class="foot-container">
         <div class="container-f">
             <ul class="footer-list">
@@ -433,6 +436,7 @@
         
     </footer>
 
-    
-  </body>
+  
+</body>
+
 </html>
