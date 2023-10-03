@@ -1,27 +1,37 @@
 .your-order {
   background-color: var(--black);
+}
+.your-order .container {
+  position: relative;
+}
 
-  /* min-width: 320px;
-  max-width: 375px; */
-}
-.your-order.container{
-  padding-bottom: 80px;
-}
-.your-order-bg {
-  /* min-width: 320px; */
-  max-width: 375px;
+.your-order .container::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+
   height: 550px;
-
-  background: url(../img/your-order/yorder-bg-mob-min.jpg);
+  background-image: url('../img/your-order/yorder-bg-mob-min.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  z-index: 3;
+}
+
+.your-order-bg {
+  min-width: 280px;
+  max-width: 335px;
+  height: 550px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .yorder-container {
   display: flex;
   flex-direction: column;
-  padding: 80px 0 40px;
+  padding: 80px 0 80px;
   /* padding-top: 80px;
   padding-bottom: 40px; */
 }
@@ -120,14 +130,11 @@
   display: none;
 }
 
-
 /* *==========================   375px ============================== */
 
 @media screen and (min-width: 375px) {
   .your-order {
     max-width: none;
-    /* width: 375px; */
-    /* margin: 0 auto; */
   }
 }
 
@@ -135,45 +142,40 @@
 
 @media screen and (min-width: 768px) {
   .your-order {
-    /* width: 768px;
-    margin: 0 auto; */
-
-    /* background-image: url('/img/about-us/about-us-background-tablet.png');
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: 369px 431px;
-    overflow: hidden; */
   }
+
+  .your-order .container::before {
+    height: 776px;
+    background-image: url('../img/your-order/yorder-bg-tab-min.jpg');
+  }
+  .your-order .container::after {
+    position: absolute;
+    content: '';
+    bottom: 90px;
+    left: 0;
+    width: 323px;
+    height: 484px;
+    background-image: url('../img/your-order/element-tab-min.png');
+    z-index: 3;
+  }
+
   .your-order-bg {
     max-width: none;
-    width: 768px;
+    width: 702px;
     height: 776px;
-
-    background: url(../img/your-order/yorder-bg-tab-min.jpg);
-    /* background-repeat: no-repeat;
-  background-position: center; */
-    background-size: cover;
   }
   .yorder-container {
-      background-image: url('/img/about-us/about-us-background-tablet.png');
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: 369px 431px;
-    overflow: hidden;
-
-
     display: flex;
     flex-direction: column;
-    padding: 100px 0 40px;
+    padding: 100px 0 170px;
   }
 
   .yorder-title {
     width: 542px;
-
     font-size: 44px;
     font-weight: 500;
     line-height: 1.31;
-    letter-spacing: -1.32px;
+    letter-spacing: -0.03em;
   }
 
   .name-input {
@@ -181,7 +183,7 @@
 
     font-size: 16px;
 
-    letter-spacing: -0.32px;
+    letter-spacing: -0.02em;
   }
   .comment-input {
     width: 508px;
@@ -195,15 +197,12 @@
   .yorder-img {
     display: flex;
     padding-top: 100px;
-    padding-left: 98px;
+    padding-left: 66px;
   }
 }
 
 @media (min-width: 768px) and (min-resolution: 192dpi) {
-  /* .your-order {
-    background-image: url('/img/about-us/about-us-background-tablet@2x.png');
-  } */
-  .your-order-bg {
+  .your-order .container::after {
     background: url('/img/your-order/yorder-bg-tab@2-min.jpg');
   }
 }
@@ -211,24 +210,31 @@
 /*  *==================================  1280px    ==================== */
 @media screen and (min-width: 1280px) {
   .your-order {
-    /* width: 1280px;
-    margin: 0 auto; */
-
-    /* background-image: url('/img/about-us/about-us-background-desctop.png');
-    background-size: 383px 483px; */
   }
-  .your-order.container{
-  padding-bottom: 150px;
-}
-  .your-order-bg {
-    width: 1280px;
-    height: 776px;
+  .your-order .container {
+    padding-bottom: 150px;
+  }
 
-    background: url(../img/your-order/yorder-bg-desk1-min.jpg);
+  .your-order .container::before {
+    height: 776px;
+    background-image: url('../img/your-order/yorder-bg-desk1-min.jpg');
+  }
+  .your-order .container::after {
+    position: absolute;
+    content: '';
+    bottom: 145px;
+    left: 0;
+    width: 323px;
+    height: 484px;
+    background-image: url('../img/your-order/element-desk1-min.png');
+    z-index: 3;
+  }
+
+  .your-order-bg {
+    width: 1240px;
   }
 
   .yorder-container {
-    /* display: flex; */
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 150px 80px 0px 44px;
@@ -240,15 +246,13 @@
     font-size: 44px;
     font-weight: 500;
     line-height: 1.31;
-    letter-spacing: -1.32px;
+    letter-spacing: -0.03em;
   }
 
   .name-input {
     width: 508px;
-
     font-size: 16px;
-
-    letter-spacing: -0.32px;
+    letter-spacing: 0.02em;
   }
   .comment-input {
     width: 508px;
@@ -267,10 +271,7 @@
 }
 
 @media (min-width: 1280px) and (min-resolution: 192dpi) {
-  .your-order {
-    background-image: url('/img/about-us/about-us-background-desctop@2x.png');
-  }
-  .your-order-bg {
+  .your-order .container::after {
     background: url('/img/your-order/yorder-bg-desk1@2-min.jpg');
   }
 }
@@ -279,25 +280,34 @@
 
 @media screen and (min-width: 1440px) {
   .your-order {
-    /* width: 1440px;
-    margin: 0 auto; */
-    background-image: url('/img/about-us/about-us-background-desctop-1440.png');
-    background-size: 545px 484px;
   }
-  .your-order-bg {
-    width: 1440px;
+  .your-order .container::before {
+    background-image: url('../img/your-order/yorder-bg-desk2-min.jpg');
+  }
+  .your-order .container::after {
+    position: absolute;
+    content: '';
+    bottom: 145px;
+    left: 0;
+    width: 323px;
+    height: 484px;
+    background-image: url('../img/your-order/element-desk2-min.png');
+    z-index: 3;
+  }
 
-    background: url(../img/your-order/yorder-bg-desk2-min.jpg);
+  .your-order-bg {
+    width: 1400px;
   }
+
   .yorder-container {
-    padding: 150px 100px 0px 100px;
+    padding: 150px 80px 0px 80px;
+  }
+  .yorder-title {
+    width: 666px;
   }
 }
 @media (min-width: 1224px) and (min-resolution: 192dpi) {
-  .your-order {
-    background-image: url('/img/about-us/about-us-background-desctop-1440@2x.png');
-  }
-  .your-order-bg {
+  .your-order .container::after {
     background: url('/img/your-order/yorder-bg-desk2@2-min.jpg');
   }
 }
