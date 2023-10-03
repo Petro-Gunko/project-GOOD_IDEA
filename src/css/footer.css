@@ -1,0 +1,85 @@
+.foot-container{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    border: 1px 0px 0px 0px;
+    font-family: 'Manrope', sans-serif;
+    background-color: #1C2225;
+
+}
+.footer-text-yellow{
+    color:  var(--yellow);
+}
+.footer-links{
+    font-family: Manrope;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+color: #FCF9F9;
+text-transform: uppercase;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+.footer-list-two{
+    display: flex;
+    
+}
+.footer-text{
+    font-family: Manrope;
+font-size: 44px;
+font-weight: 400;
+line-height: 1.2;
+letter-spacing: -0.03em;
+text-align: left;
+color: #FCF9F9;
+
+}
+.img-vyshyvanka{
+    width: 100%;
+}
+@media screen and(min-width:375px) {
+    .container-f{
+        width: 375px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media screen and(min-width:768px){
+    .container-f{
+        width: 736px;
+        padding-left: 32px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+    
+    }
+    .pes{
+        display: flex;
+
+    }
+}
+@media screen and(min-width:1280px){
+.container-f{
+    width: 1180px;
+    padding-left: 100px;
+    margin-right: auto;
+        margin-left: auto;
+
+}
+}
+
+@media screen and(min-width:1440px){
+    .container-f{
+        width: 1340px;
+        padding-left: 100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
