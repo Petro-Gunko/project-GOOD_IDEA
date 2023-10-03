@@ -1,293 +1,228 @@
 /* ================ About Us ============ */
 
+/* ------------ Mobile ------- */
 .about-us-section {
-    background-color: #1C2225; 
-    padding-bottom: 50px;
-    margin-bottom: 30px;
-
+    background-color: var(--black); 
     background-repeat: no-repeat;
     background-position: right bottom;
-    
-    overflow: hidden;
+    background-image: url("/img/about-us/about-us-background-mobile.png");
+    padding-bottom: 62px;
+    max-width: fit-content;
+    margin: 0 auto;
+
 }
 
-.about-us-container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
+.about-us-container {  
+    display: inline-flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    min-width: 320px;
+    max-width: fit-content;
 }
 
 .about-us {
-    color: #FCF9F9;
+    color: var(--white);
     font-family: Manrope;
     font-weight: 500;
-}
-
-.about-us-descr {
-    color: rgba(252, 249, 249, 0.40);
-    font-family: Manrope;
-    font-weight: 400;
-}
-
-/* ---------------- Mobile ----------- */
-
-@media screen and (max-width: 767px) {
-
-    .about-us-container {
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-    }
-
-.about-us-section {
-        background-image: url("/img/about-us/about-us-background-mobile.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 230px 346px;
-    overflow: hidden;
-}
-
-@media (min-resolution: 192dpi) {
-    .about-us-section {
-        background-image: url("/img/about-us/about-us-background-mobile@2x.png");
-    }
-
-}
-
-.about-us {
-
+    max-width: 375px;
     font-size: 32px;
     font-style: normal;
-    font-weight: 500;
     line-height: 1.38;
-    letter-spacing: 0.03em; 
-
-    margin-left: 20px;
-    margin-bottom: 40px;
+    letter-spacing: -0.03em; 
+    padding-bottom: 40px;
 }
 
-.about-us-item-one {
-    margin-bottom: 20px;
+.about-us-item {
+        padding-bottom: 20px;
+    }
+
+.about-us-item:last-child {
+     padding-bottom: 50px;
 }
 
+    .about-us-text {
+        color: rgba(252, 249, 249, 0.40);
+        font-family: Manrope;
+        font-size: 14px; /* - */
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.04em; 
+    }
 
-.about-us-item-two {
-    margin-bottom: 50px;
-}
+    .about-us-img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;   
+             
+    } 
 
 
 
-.about-us-descr {
-    color: rgba(252, 249, 249, 0.40);
-    font-family: Manrope;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.04em; 
-}
+@media screen and (min-width: 375px) {
 
+    .about-us-item {
+        width: 335px;
+      }
 
-.about-us-img {
-    display: flex;
-    margin-left: auto;
-    margin-right: 20px;
-    width: 100%;
-    height: auto;
-    border-radius: 4px; 
+    .about-us-img {
+        width: 335px;
+    } 
     
-    padding-left: 0px;
-    padding-right: 0px;
-
-} 
-
-
-
 }
+
 
 /* ---------------- End Mobile ----------- */
 
-/* ---------------- Tablet ----------- */
+/* ------------------ Tablet ------------ */
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .about-us-section {
-        margin-bottom: 50px;
-
         background-image: url("/img/about-us/about-us-background-tablet.png");
-        background-size: 369px 431px;
-    }
+        padding-bottom: 50px;
 
+    }
 
  
     .about-us {
         font-size: 44px;
         line-height: 1.45;
-        letter-spacing: 0.03em; 
+    }
 
-        margin-left: 20px;
-        margin-bottom: 40px;
-    }
-    
-    .about-us-item-one {
-        margin-bottom: 20px;
-    }
-    
-    
-    .about-us-item-two {
-        margin-bottom: 40px;
-    }
-    
-    
-    
-    .about-us-descr {
-        font-size: 16px;
-        line-height: normal;
-        letter-spacing: 0.04em;  
-    }
-    
-    
+    .about-us-item {
+        width: 704px;
+        padding-bottom: 20px;
+      }
+
     .about-us-img {
-        display: flex;
-        margin-left: auto;
-        margin-right: 20px;
-        width: 100%;
-        height: auto;
-        border-radius: 4px; 
-        
-        padding-left: 0px;
-        padding-right: 0px;
-    
-    } 
-    
-}
-
-@media (min-width: 768px) and (min-resolution: 192dpi) {
-    .about-us-section {
-        background-image: url("/img/about-us/about-us-background-tablet@2x.png");
+        width: 704px;
     }
+    
+    .about-us-item:last-child {
+        padding-bottom: 40px;
+   }
+    
+            
+    .about-us-text {
+        font-size: 16px;
+    }
+
+    
 }
 
 /* ---------------- End Tablet ----------- */
 
 /* ---------------- Desctop ----------- */
 
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
 
-    .about-us-section {
-        padding-bottom: 80px;
-        margin-bottom: 70px;
-
-        background-image: url("/img/about-us/about-us-background-desctop.png");
-        background-size: 383px 483px;
+    .about-us-container {
+        padding-top: 20px;
     }
 
+    .about-us-container {
+        flex-direction: inherit;
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
+        gap: 50px; 
+        padding-left: 80px;
+        width: 1080px
+      }
+    
+    
+      .about-us-list {
+        max-width: 436px;
+      }
+  
     .about-us {
         font-size: 44px;
         line-height: 1.45;
-        letter-spacing: 0.03em; 
+        letter-spacing: -0.03em; 
+    }
 
-        margin-left: 20px;
-        margin-bottom: 40px;
-
-    }
-    
-    .about-us-item-one {
-        margin-bottom: 20px;
-    }
-    
-    
-    .about-us-item-two {
-        margin-bottom: 40px;
-    }
-    
-    
-    
-    .about-us-descr {
-        font-size: 16px;
-        line-height: normal;
-        letter-spacing: 0.04em;  
-    }
-    
-    
     .about-us-img {
-        display: flex;
-        margin-left: auto;
-        margin-right: 20px;
-        width: 100%;
-        height: auto;
-        border-radius: 4px; 
-        
-        padding-left: 0px;
-        padding-right: 0px;
-    
-    } 
-}
-
-
-@media (min-width: 1280px) and (min-resolution: 192dpi) {
-    .about-us-section {
-        background-image: url("/img/about-us/about-us-background-desctop@2x.png");
+        width: 704px;
     }
-}
+    
+    .about-us-item: {
+        padding-bottom: 20px;
+   }
+    
+    .about-us-item:last-child {
+        padding-bottom: 40px;
+   }
+    
+            
+    .about-us-text {
+        font-size: 16px;
+    }
+
+    
+    .about-us-item {
+        width: 436px;
+      }
+
+    .about-us-img {
+        width: 594px;
+            }
+
+    .about-us-section {
+        background-image: url("/img/about-us/about-us-background-desctop.png");    
+        padding: 70px 80px 70px 100px;
+       
+    }
+    
+
+
 
 /* ---------------- End Desctop ----------- */
 
 /* ---------------- Desctop 1440----------- */
 
-@media (min-width: 1440px) {
-    .about-us-section {
-        background-image: url("/img/about-us/about-us-background-desctop-1440.png");
-        background-size: 545px 484px;
-    }
+@media screen and (min-width: 1440px) {
+ 
+         .about-us-container  {
+              display: inline-flex;
+              flex-direction: inherit;
+              align-items: center;
+              width: 1240px;
+             justify-content: center;
+             gap: 50px;
 
-.about-us {
-    font-size: 44px;
-    line-height: 1.45;
-    letter-spacing: 0.03em; 
+            }
+         
+        .about-us-list {
+              width: 481px;
+            }
 
-    margin-left: 20px;
-    margin-bottom: 40px;
+            .about-us-item {
+              width: 481px;
+              padding-top: 20px;
+            }
+            
+            .about-us-text {
+                font-size: 16px;
+            }
+        
 
-}
+        .about-us-descr {
+              display: block;
+              margin-right: 50px;
+              width: 481px;
+            }
+        .about-us-section {
+            background-image: url("/img/about-us/about-us-background-desctop-1440.png");
+                   }
+        
+                
 
-.about-us-item-one {
-    margin-bottom: 20px;
-}
-
-
-.about-us-item-two {
-    margin-bottom: 40px;
-}
-
-
-
-.about-us-descr {
-    font-size: 16px;
-    line-height: normal;
-    letter-spacing: 0.04em;  
-}
-
-
-.about-us-img {
-    display: flex;
-    margin-left: auto;
-    margin-right: 20px;
-    width: 100%;
-    height: auto;
-    border-radius: 4px; 
-    
-    padding-left: 0px;
-    padding-right: 0px;
-
-} 
 
 }
 
-@media (min-width: 1440px) and (min-resolution: 192dpi) {
-    .about-us-section {
-        background-image: url("/img/about-us/about-us-background-desctop-1440@2x.png");
-    }
 }
+
 /* ---------------- End Desctop 1440----------- */
 
 /* ================ END About Us ============ */

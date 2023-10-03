@@ -37,5 +37,5 @@ img {
 body {
   font-family: 'Manrope', sans-serif;
   margin: 0;
+  background-color: var(--black);
 }
-
