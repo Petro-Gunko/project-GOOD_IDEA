@@ -1,7 +1,22 @@
 /* OUR-COLLECTION */
 .our-collection {
     padding-bottom: 60px;
-    background-color: var(--black);
+}
+
+.container {
+    position: relative;
+}
+
+.container::after {
+    position: absolute;
+    display: flex;
+    width: 199px;
+    height: 177px;
+    content: "";
+    background-image: url("/img/our_collection/ornament-mob-min.png");
+    background-repeat: no-repeat;
+    top: 230px;
+    left: 0;
 }
 
 .our-collection-section-title{
