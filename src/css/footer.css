@@ -93,20 +93,20 @@
       content: "";
       background-repeat: no-repeat;
       background-image: url("/img/footer/elements-1080.png");
-      transform: translateX(-1%);
+      transform: translateX(30%);
   }
 }
   @media screen and (min-width:1440px) {
     .footer-container-main::after{
       position: absolute;
       top: 5px;
-      right: px;
+      
       width: 528px;
       height: 595px;
       content: "";
       background-repeat: no-repeat;
       background-image: url("/img/footer/elements-1440.png");
-      transform: translateX(-1%);
+      transform: translateX(30%);
   }
   }
   
