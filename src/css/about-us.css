@@ -3,8 +3,8 @@
 /* ------------ Mobile ------- */
 .about-us-section {
     padding-bottom: 80px;
-    overflow: hidden;
 }
+   
 
 .about-us-container {  
     display: inline-flex;
@@ -50,13 +50,13 @@
 .about-us-container-img::after {
         position: absolute;
         display: flex;
-        width: 459px;
+        width: 250px;
         height: 408px;
         content: "";
         background-image: url("/img/about-us/about-us-background-mobile.png");
         background-repeat: no-repeat;
         bottom: -62px;
-        left: 105px;
+        right: -20px;
         z-index: 1;
       }
 
@@ -112,7 +112,7 @@
 }
     
 .about-us-container-img::after {
-    width: 545px;
+    width: 370px;
     height: 484px;
     background-image: url("/img/about-us/about-us-background-tablet.png");
     bottom: -50px;
@@ -133,6 +133,8 @@
 
     .about-us-section {
         padding-bottom: 150px;
+        /* padding-left: 80px;
+        padding-right: 80px; */
     }
 
     .about-us {
@@ -178,7 +180,7 @@
     }
         
     .about-us-container-img::after {
-        width: 545px;
+        width: 385px;
         height: 484px;
         background-image: url("/img/about-us/about-us-background-desctop.png");
         bottom: -80px;
@@ -193,6 +195,7 @@
 
     .about-us-section {
         padding-bottom: 150px;
+
     }
 
     .about-us {
@@ -226,6 +229,7 @@
         background-image: url("/img/about-us/about-us-background-desctop-1440.png");
         bottom: -80px;
         left: 264px;
+        right: 30px;
     }
 
 }
