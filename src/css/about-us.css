@@ -49,14 +49,14 @@
 .about-us-container-img::after {
         position: absolute;
         display: flex;
-        width: 459px;
+        width: 250px;
         height: 408px;
         content: "";
         background-image: url("/img/about-us/about-us-background-mobile.png");
         background-repeat: no-repeat;
         bottom: -62px;
-        left: 105px;
-        z-index: -10;
+        left: 125px;
+        z-index: 1;
       }
 
 .about-us-img {
@@ -107,7 +107,7 @@
 }
     
 .about-us-container-img::after {
-    width: 545px;
+    width: 370px;
     height: 484px;
     background-image: url("/img/about-us/about-us-background-tablet.png");
     bottom: -50px;
@@ -173,7 +173,7 @@
     }
         
     .about-us-container-img::after {
-        width: 545px;
+        width: 385px;
         height: 484px;
         background-image: url("/img/about-us/about-us-background-desctop.png");
         bottom: -80px;
