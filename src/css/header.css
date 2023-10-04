@@ -1,11 +1,4 @@
-.header {
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- 
-  padding: 20px;
-}
 
 .logo {
   margin-left: 0;
@@ -43,7 +36,7 @@
   cursor: pointer;
 }
 
-<<<<<<< Updated upstream
+
 .open-mobile-menu-btn {
   display: flex;
   background-color: transparent;
@@ -80,7 +73,7 @@
   .header {
     display: flex;
     background-color: var(--black);
-    padding: 20px 100px;
+    
   }
 
   .nav {
@@ -165,7 +158,10 @@
     border: none;
     cursor: pointer;
   }
-=======
+}
+
+/* mobail menu */
+
 .mobile-menu {
   
   background-color: var(--yellow);
@@ -194,16 +190,10 @@
   margin-bottom: 186px;
 
 }
-
-.btn-mobaile-close {
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  cursor: pointer;
-}
+.contacts-mobile-menu {
+  border-radius: 15px;
+  border: 1px solid rgba(28, 34, 37, 0.10);
+} 
 
 .link-contacts-mobile {
   padding: 14px 28px;
@@ -213,9 +203,24 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.17; /* 116.667% */
 text-transform: uppercase;
-border-radius: 15px;
-  border: 1px solid rgba(28, 34, 37, 0.10);
+
 }
+
+.btn-mobaile-close {
+  border: none;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  
+  background-color: var(--yellow);
+  stroke: var(--black);
+}
+
+
 
 .list-main-mobile-menu {
   display: inline-flex;
@@ -231,5 +236,18 @@ border-radius: 15px;
   font-weight: 400;
   line-height: 18px; /* 128.571% */
   text-transform: uppercase;
->>>>>>> Stashed changes
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  left: -33px;
+  bottom: 50px;
+  display: block;
+  width: 340px;
+  height: 302px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background-image: url(../img/header/ornament-mob-menu.png);
+  background-repeat: no-repeat;  
 }
