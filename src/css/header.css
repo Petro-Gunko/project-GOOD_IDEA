@@ -164,8 +164,6 @@
 
 .mobile-menu {
   min-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--yellow);
   position: fixed;
     top: 0;
@@ -175,10 +173,18 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 32px;
+    background-image: url(../img/header/ornament-mob-menu.png);
+    background-position: 50% 570px;
+    background-repeat: no-repeat;
+    background-size: 395px 380px;
     z-index: 10;
+}
+.container-mob-menu {
+  max-width: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 32px;
 }
 
 .is-open{
@@ -189,24 +195,25 @@
 
 .container-top-mobail-menu {
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
   margin-bottom: 186px;
 
 }
 .contacts-mobile-menu {
+  display: flex;
+  align-items: center;
   border-radius: 15px;
   border: 1px solid rgba(28, 34, 37, 0.10);
 } 
 
 .link-contacts-mobile {
-  padding: 14px 28px;
+  padding: 12px 20px;
   color: var(--black);
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: 1.17; /* 116.667% */
 text-transform: uppercase;
-
 }
 
 .btn-mobaile-close {
@@ -226,8 +233,9 @@ text-transform: uppercase;
 
 
 .list-main-mobile-menu {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-end;
   gap: 20px;
 }
@@ -241,24 +249,45 @@ text-transform: uppercase;
   text-transform: uppercase;
 
 }
-
+/* 
 .mobile-menu::after {
   content: "";
   position: absolute;
-  left: -33px;
-  bottom: 50px;
+  top: 560px;
+  left: 160px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
-  width: 340px;
-  height: 302px;
+  width: 500px;
+  height: 500px;
   flex-shrink: 0;
   border-radius: 2px;
-  background-image: url(../img/header/ornament-mob-menu.png);
+  background-image: url(/img/header/ornament-mob-menu.png);
   background-repeat: no-repeat;  
-
-}
+  
+} */
 @media screen and (min-width: 375px) {
-  .mobile-menu {
+  .container-mob-menu {
     width: 375px;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-mob-menu {
+    max-width: 400px;
+   }
+   .btn-mobaile-close {
+    width: 44px;
+    height: 44px;
+   }
+   .link-contacts-mobile {
+    padding: 14px 28px;
+    color: var(--black);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.43;
+    text-transform: uppercase;
   }
 }
