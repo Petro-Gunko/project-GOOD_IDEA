@@ -3,6 +3,7 @@
 /* ------------ Mobile ------- */
 .about-us-section {
     padding-bottom: 80px;
+    overflow: hidden;
 }
 
 .about-us-container {  
@@ -49,14 +50,18 @@
 .about-us-container-img::after {
         position: absolute;
         display: flex;
-        width: 250px;
+        width: 459px;
         height: 408px;
         content: "";
         background-image: url("/img/about-us/about-us-background-mobile.png");
         background-repeat: no-repeat;
         bottom: -62px;
-        left: 125px;
+        left: 105px;
         z-index: 1;
+      }
+
+      .about-us-container-img {
+        margin: auto;
       }
 
 .about-us-img {
@@ -107,7 +112,7 @@
 }
     
 .about-us-container-img::after {
-    width: 370px;
+    width: 545px;
     height: 484px;
     background-image: url("/img/about-us/about-us-background-tablet.png");
     bottom: -50px;
@@ -173,7 +178,7 @@
     }
         
     .about-us-container-img::after {
-        width: 385px;
+        width: 545px;
         height: 484px;
         background-image: url("/img/about-us/about-us-background-desctop.png");
         bottom: -80px;
