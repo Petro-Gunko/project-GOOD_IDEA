@@ -10,13 +10,14 @@
 .container::after {
     position: absolute;
     display: flex;
-    width: 199px;
+    min-width: 199px;
     height: 177px;
     content: "";
     background-image: url("/img/our_collection/ornament-mob-min.png");
     background-repeat: no-repeat;
-    top: 230px;
+    top: 241px;
     left: 0;
+    z-index: -1;
 }
 
 .our-collection-section-title{
@@ -66,11 +67,31 @@
 }
 
 
+@media screen and (min-width: 375px) {
+    
+    .container::after {
+            top: 307px;
+        }
+}
+
+
 @media screen and (min-width: 768px) {
     
     .our-collection {
             padding-bottom: 100px;
-            background-color: var(--black);
+        }
+
+    .container::after {
+            position: absolute;
+            display: flex;
+            min-width: 338px;
+            height: 300px;
+            content: "";
+            background-image: url("/img/our_collection/ornament-tab-min.png");
+            background-repeat: no-repeat;
+            top: 220px;
+            left: 0;
+            z-index: -1;
         }
 
     .our-collection-section-title {
@@ -123,6 +144,19 @@
 @media screen and (min-width: 1280px) {
     .our-collection {
             padding-bottom: 150px;
+        }
+
+    .container::after {
+            position: absolute;
+            display: flex;
+            min-width: 338px;
+            height: 300px;
+            content: "";
+            background-image: url("../img/our_collection/ornament-min.png");
+            background-repeat: no-repeat;
+            top: 220px;
+            left: -80px;
+            z-index: -1;
         }
 
     .our-collection-section-title {
