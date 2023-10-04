@@ -108,12 +108,14 @@
         position: relative;
     }
 
-    
+
 }
+
 @media screen and (min-width: 1440px) {
 
     .all-testimonials-list {
-    gap: 26px;
-    width: calc ((100% - 52px) /3);
+        gap: 26px;
+        width: calc ((100% - 52px) /3);
+
     }
 }

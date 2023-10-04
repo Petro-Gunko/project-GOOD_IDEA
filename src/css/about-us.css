@@ -22,15 +22,15 @@
     font-style: normal;
     line-height: 1.38;
     letter-spacing: -0.03em; 
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .about-us-item {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     }
 
 .about-us-item:last-child {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .about-us-text {
@@ -49,14 +49,14 @@
 .about-us-container-img::after {
         position: absolute;
         display: flex;
-        width: 459px;
+        width: 250px;
         height: 408px;
         content: "";
         background-image: url("/img/about-us/about-us-background-mobile.png");
         background-repeat: no-repeat;
         bottom: -62px;
-        left: 105px;
-        z-index: -10;
+        left: 125px;
+        z-index: 1;
       }
 
 .about-us-img {
@@ -94,12 +94,12 @@
 
     .about-us-item {
         width: 704px;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
       }
 
       
     .about-us-item:last-child {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
    }
 
    .about-us-img {
@@ -107,7 +107,7 @@
 }
     
 .about-us-container-img::after {
-    width: 545px;
+    width: 370px;
     height: 484px;
     background-image: url("/img/about-us/about-us-background-tablet.png");
     bottom: -50px;
@@ -131,7 +131,7 @@
     }
 
     .about-us {
-        padding-top: 50px;
+        margin-top: 50px;
     }
 
     .about-us-container {
@@ -153,11 +153,11 @@
 
     
     .about-us-item: {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
    }
     
     .about-us-item:last-child {
-        padding-bottom: 43,5px;
+        margin-bottom: 43,5px;
    }
              
     .about-us-text {
@@ -173,7 +173,7 @@
     }
         
     .about-us-container-img::after {
-        width: 545px;
+        width: 385px;
         height: 484px;
         background-image: url("/img/about-us/about-us-background-desctop.png");
         bottom: -80px;
@@ -191,7 +191,7 @@
     }
 
     .about-us {
-        padding-top: 80px;
+        margin-top: 80px;
     }
 
       .about-us-list {
@@ -199,11 +199,11 @@
       }
    
     .about-us-item: {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
    }
     
     .about-us-item:last-child {
-        padding-bottom: 79px;
+        margin-bottom: 79px;
    }
              
   
