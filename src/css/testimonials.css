@@ -83,7 +83,6 @@
         gap: 32px;
         width: calc ((100% - 32px) /2);
     }
-
     .testimonial-2 {
         display: initial;
         border-radius: 4px;
@@ -102,7 +101,6 @@
         gap: 26px;
         width: calc ((100% - 52px) /3);
     }
-
     .testimonial-3 {
         display: initial;
         border-radius: 4px;
@@ -118,5 +116,6 @@
     .all-testimonials-list {
         gap: 26px;
         width: calc ((100% - 52px) /3);
+
     }
 }
