@@ -2,14 +2,7 @@
 
 /* ------------ Mobile ------- */
 .about-us-section {
-    background-color: var(--black); 
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-image: url("/img/about-us/about-us-background-mobile.png");
-    padding-bottom: 62px;
-    max-width: fit-content;
-    margin: 0 auto;
-
+    padding-bottom: 80px;
 }
 
 .about-us-container {  
@@ -17,7 +10,6 @@
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
-    min-width: 320px;
     max-width: fit-content;
 }
 
@@ -34,31 +26,43 @@
 }
 
 .about-us-item {
-        padding-bottom: 20px;
+    padding-bottom: 20px;
     }
 
 .about-us-item:last-child {
-     padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
-    .about-us-text {
-        color: rgba(252, 249, 249, 0.40);
-        font-family: Manrope;
-        font-size: 14px; /* - */
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -0.04em; 
+.about-us-text {
+    color: rgba(252, 249, 249, 0.40);
+    font-family: Manrope;
+    font-size: 14px; /* - */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.04em; 
     }
 
-    .about-us-img {
+.about-us-container-img {
+        position: relative;
+      }
+.about-us-container-img::after {
+        position: absolute;
+        display: flex;
+        width: 459px;
+        height: 408px;
+        content: "";
+        background-image: url("/img/about-us/about-us-background-mobile.png");
+        background-repeat: no-repeat;
+        bottom: -62px;
+        left: 105px;
+        z-index: -10;
+      }
+
+.about-us-img {
         width: 100%;
-        height: auto;
-        border-radius: 4px;   
-             
-    } 
-
-
+        border-radius: 4px;
+       } 
 
 @media screen and (min-width: 375px) {
 
@@ -78,13 +82,11 @@
 /* ------------------ Tablet ------------ */
 
 @media screen and (min-width: 768px) {
-    .about-us-section {
-        background-image: url("/img/about-us/about-us-background-tablet.png");
-        padding-bottom: 50px;
 
+    .about-us-section {
+        padding-bottom: 100px;
     }
 
- 
     .about-us {
         font-size: 44px;
         line-height: 1.45;
@@ -95,20 +97,27 @@
         padding-bottom: 20px;
       }
 
-    .about-us-img {
-        width: 704px;
-    }
-    
+      
     .about-us-item:last-child {
         padding-bottom: 40px;
    }
+
+   .about-us-img {
+    width: 704px;
+}
     
+.about-us-container-img::after {
+    width: 545px;
+    height: 484px;
+    background-image: url("/img/about-us/about-us-background-tablet.png");
+    bottom: -50px;
+    left: 367px;
+  }
             
     .about-us-text {
         font-size: 16px;
     }
 
-    
 }
 
 /* ---------------- End Tablet ----------- */
@@ -117,20 +126,20 @@
 
 @media screen and (min-width: 1280px) {
 
-    .about-us-container {
-        padding-top: 20px;
+    .about-us-section {
+        padding-bottom: 150px;
+    }
+
+    .about-us {
+        padding-top: 50px;
     }
 
     .about-us-container {
-        flex-direction: inherit;
+        flex-direction: row;
         align-items: center;
-        display: inline-flex;
-        justify-content: center;
-        gap: 50px; 
-        padding-left: 80px;
-        width: 1080px
+        gap: 50px;
       }
-    
+
     
       .about-us-list {
         max-width: 436px;
@@ -142,87 +151,83 @@
         letter-spacing: -0.03em; 
     }
 
-    .about-us-img {
-        width: 704px;
-    }
     
     .about-us-item: {
         padding-bottom: 20px;
    }
     
     .about-us-item:last-child {
-        padding-bottom: 40px;
+        padding-bottom: 43,5px;
    }
-    
-            
+             
     .about-us-text {
         font-size: 16px;
     }
 
-    
     .about-us-item {
         width: 436px;
-      }
+    }
 
     .about-us-img {
         width: 594px;
-            }
-
-    .about-us-section {
-        background-image: url("/img/about-us/about-us-background-desctop.png");    
-        padding: 70px 80px 70px 100px;
-       
+    }
+        
+    .about-us-container-img::after {
+        width: 545px;
+        height: 484px;
+        background-image: url("/img/about-us/about-us-background-desctop.png");
+        bottom: -80px;
+        left: 309px;
     }
     
-
-
-
 /* ---------------- End Desctop ----------- */
 
 /* ---------------- Desctop 1440----------- */
 
 @media screen and (min-width: 1440px) {
- 
-         .about-us-container  {
-              display: inline-flex;
-              flex-direction: inherit;
-              align-items: center;
-              width: 1240px;
-             justify-content: center;
-             gap: 50px;
 
-            }
-         
-        .about-us-list {
-              width: 481px;
-            }
+    .about-us-section {
+        padding-bottom: 150px;
+    }
 
-            .about-us-item {
-              width: 481px;
-              padding-top: 20px;
-            }
-            
-            .about-us-text {
-                font-size: 16px;
-            }
+    .about-us {
+        padding-top: 80px;
+    }
+
+      .about-us-list {
+        max-width: 481px;
+      }
+   
+    .about-us-item: {
+        padding-bottom: 20px;
+   }
+    
+    .about-us-item:last-child {
+        padding-bottom: 79px;
+   }
+             
+  
+    .about-us-item {
+        width: 481px;
+    }
+
+    .about-us-img {
+        width: 709px;
+    }
         
-
-        .about-us-descr {
-              display: block;
-              margin-right: 50px;
-              width: 481px;
-            }
-        .about-us-section {
-            background-image: url("/img/about-us/about-us-background-desctop-1440.png");
-                   }
-        
-                
-
+    .about-us-container-img::after {
+        width: 545px;
+        height: 484px;
+        background-image: url("/img/about-us/about-us-background-desctop-1440.png");
+        bottom: -80px;
+        left: 264px;
+    }
 
 }
 
 }
 
-/* ---------------- End Desctop 1440----------- */
+
+/* ---------------- End Desctop 1440 ----------- */
 
 /* ================ END About Us ============ */
