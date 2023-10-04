@@ -236,6 +236,7 @@ text-transform: uppercase;
   font-weight: 400;
   line-height: 18px; /* 128.571% */
   text-transform: uppercase;
+
 }
 
 .current::after {
@@ -250,4 +251,5 @@ text-transform: uppercase;
   border-radius: 2px;
   background-image: url(../img/header/ornament-mob-menu.png);
   background-repeat: no-repeat;  
+
 }
