@@ -22,15 +22,15 @@
     font-style: normal;
     line-height: 1.38;
     letter-spacing: -0.03em; 
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .about-us-item {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     }
 
 .about-us-item:last-child {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .about-us-text {
@@ -94,12 +94,12 @@
 
     .about-us-item {
         width: 704px;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
       }
 
       
     .about-us-item:last-child {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
    }
 
    .about-us-img {
@@ -131,7 +131,7 @@
     }
 
     .about-us {
-        padding-top: 50px;
+        margin-top: 50px;
     }
 
     .about-us-container {
@@ -153,11 +153,11 @@
 
     
     .about-us-item: {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
    }
     
     .about-us-item:last-child {
-        padding-bottom: 43,5px;
+        margin-bottom: 43,5px;
    }
              
     .about-us-text {
@@ -191,7 +191,7 @@
     }
 
     .about-us {
-        padding-top: 80px;
+        margin-top: 80px;
     }
 
       .about-us-list {
@@ -199,11 +199,11 @@
       }
    
     .about-us-item: {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
    }
     
     .about-us-item:last-child {
-        padding-bottom: 79px;
+        margin-bottom: 79px;
    }
              
   
