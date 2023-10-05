@@ -142,8 +142,7 @@
 /* *==========================   768px ============================== */
 
 @media screen and (min-width: 768px) {
-  .your-order {
-  }
+ 
 
   .your-order .container::before {
     height: 776px;
@@ -210,9 +209,7 @@
 
 /*  *==================================  1280px    ==================== */
 @media screen and (min-width: 1280px) {
-  .your-order {
-    
-  }
+  
   .your-order .container {
     padding-bottom: 150px;
   }
@@ -283,8 +280,7 @@
 /* *============================ 1440 =========================== */
 
 @media screen and (min-width: 1440px) {
-  .your-order {
-  }
+  
   .your-order .container::before {
     background-image: url('/img/your-order/yorder-bg-desk2-min.jpg');
   }
