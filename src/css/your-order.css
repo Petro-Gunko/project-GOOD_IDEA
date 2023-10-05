@@ -216,6 +216,8 @@
 
   .your-order .container::before {
     height: 776px;
+    width: 1280px;
+    left: -80px;
     background-image: url('/img/your-order/yorder-bg-desk1-min.jpg');
   }
   .your-order .container::after {
@@ -230,7 +232,7 @@
   }
 
   .your-order-bg {
-    width: 1240px;
+    width: 1120px;
   }
 
   .yorder-container {
@@ -282,6 +284,7 @@
 @media screen and (min-width: 1440px) {
 
   .your-order .container::before {
+    width: 1440px;
     background-image: url('/img/your-order/yorder-bg-desk2-min.jpg');
   }
   .your-order .container::after {
@@ -296,7 +299,7 @@
   }
 
   .your-order-bg {
-    width: 1400px;
+    width: 1280px;
   }
 
   .yorder-container {
