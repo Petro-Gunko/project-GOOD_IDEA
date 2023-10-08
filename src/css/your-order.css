@@ -1,10 +1,9 @@
 .your-order {
-  background-color: var(--black);
+  background-color:var(--black);
 }
 .your-order .container {
   position: relative;
 }
-
 
 .your-order .container::before {
   position: absolute;
@@ -33,7 +32,6 @@
   display: flex;
   flex-direction: column;
   padding: 80px 0 80px;
-
 }
 .yorder-title {
   color: var(--white);
@@ -56,7 +54,6 @@
 
 .name-input {
   width: 100%;
-  /* height: 47px; */
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
   background-color: transparent;
@@ -75,9 +72,9 @@
   border-color: rgba(252, 249, 249, 0.6);
   color: rgba(252, 249, 249, 1);
 }
-/* .name-input:hover {
+.name-input:hover {
   border-color: rgba(252, 249, 249, 0.6);
-} */
+}
 
 .comment-input {
   width: 100%;
@@ -95,7 +92,9 @@
   border-color: rgba(252, 249, 249, 0.6);
   color: rgba(252, 249, 249, 1);
 }
-
+.comment-input:hover {
+  border-color: rgba(252, 249, 249, 0.6);
+}
 
 .btn-submint {
   display: flex;
@@ -111,7 +110,7 @@
   border-radius: 15px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   color: var(--white, #fcf9f9);
-  background-color: #1c2225;
+  background-color:var(--black);
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -142,8 +141,6 @@
 /* *==========================   768px ============================== */
 
 @media screen and (min-width: 768px) {
-
-
   .your-order .container::before {
     height: 776px;
     background-image: url('/img/your-order/yorder-bg-tab-min.jpg');
@@ -205,11 +202,13 @@
   .your-order .container::after {
     background: url('/img/your-order/yorder-bg-tab@2-min.jpg');
   }
+  .your-order .container::after {
+    background-image: url('/img/your-order/element-tab-min.png');
+  }
 }
 
 /*  *==================================  1280px    ==================== */
 @media screen and (min-width: 1280px) {
-
   .your-order .container {
     padding-bottom: 150px;
   }
@@ -224,8 +223,8 @@
     position: absolute;
     content: '';
     bottom: 145px;
-    left: 0;
-    width: 323px;
+    left: -82px;
+    width: 289px;
     height: 484px;
     background-image: url('/img/your-order/element-desk1-min.png');
     z-index: 3;
@@ -277,12 +276,14 @@
   .your-order .container::after {
     background: url('/img/your-order/yorder-bg-desk1@2-min.jpg');
   }
+  .your-order .container::after {
+    background-image: url('/img/your-order/element-desk1-min.png');
+  }
 }
 
 /* *============================ 1440 =========================== */
 
 @media screen and (min-width: 1440px) {
-
   .your-order .container::before {
     width: 1440px;
     background-image: url('/img/your-order/yorder-bg-desk2-min.jpg');
@@ -291,10 +292,10 @@
     position: absolute;
     content: '';
     bottom: 145px;
-    left: 0;
+    left: -80px;
     width: 323px;
     height: 484px;
-    background-image: url('/img/your-order/element-desk2-min.png');
+    background-image: url('/img/your-order/element-tab-min.png');
     z-index: 3;
   }
 
@@ -309,8 +310,11 @@
     width: 666px;
   }
 }
-@media (min-width: 1224px) and (min-resolution: 192dpi) {
+@media (min-width: 1440px) and (min-resolution: 192dpi) {
   .your-order .container::after {
     background: url('/img/your-order/yorder-bg-desk2@2-min.jpg');
+  }
+  .your-order .container::after {
+    background-image: url('/img/your-order/element-tab-min.png');
   }
 }
