@@ -205,6 +205,11 @@
   .your-order .container::after {
     background: url('/img/your-order/yorder-bg-tab@2-min.jpg');
   }
+  .your-order .container::after {
+
+    background-image: url('/img/your-order/element-tab-min.png');
+
+  }
 }
 
 /*  *==================================  1280px    ==================== */
@@ -224,8 +229,8 @@
     position: absolute;
     content: '';
     bottom: 145px;
-    left: 0;
-    width: 323px;
+    left: -82px;
+    width: 289px;
     height: 484px;
     background-image: url('/img/your-order/element-desk1-min.png');
     z-index: 3;
@@ -277,6 +282,12 @@
   .your-order .container::after {
     background: url('/img/your-order/yorder-bg-desk1@2-min.jpg');
   }
+  .your-order .container::after {
+
+    background-image: url('/img/your-order/element-desk1-min.png');
+
+  }
+
 }
 
 /* *============================ 1440 =========================== */
@@ -291,10 +302,10 @@
     position: absolute;
     content: '';
     bottom: 145px;
-    left: 0;
+    left: -80px;
     width: 323px;
     height: 484px;
-    background-image: url('/img/your-order/element-desk2-min.png');
+    background-image: url('/img/your-order/element-tab-min.png');
     z-index: 3;
   }
 
@@ -309,8 +320,13 @@
     width: 666px;
   }
 }
-@media (min-width: 1224px) and (min-resolution: 192dpi) {
+@media (min-width: 1440px) and (min-resolution: 192dpi) {
   .your-order .container::after {
     background: url('/img/your-order/yorder-bg-desk2@2-min.jpg');
+  }
+   .your-order .container::after {
+
+    background-image: url('/img/your-order/element-tab-min.png');
+
   }
 }
