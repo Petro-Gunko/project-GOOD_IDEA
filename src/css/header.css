@@ -170,9 +170,9 @@
   top: 0;
   right: 0;
   height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  /* opacity: 1;
+  visibility: visible;
+  pointer-events: none; */
   background-image: url(/img/header/ornament-mob-menu.png);
   background-position: 50% 570px;
   background-repeat: no-repeat;
@@ -187,10 +187,10 @@
   padding: 20px 32px;
 }
 
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .container-top-mobail-menu {

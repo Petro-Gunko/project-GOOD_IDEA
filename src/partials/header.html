@@ -49,7 +49,7 @@
         </li>
       </ul>
 
-      <button class="open-mobile-menu-btn" type="button">
+      <button class="open-mobile-menu-btn" type="button" data-modal-open>
         <svg
           class="open-mobile-menu-icon"
           width="36"
@@ -63,7 +63,7 @@
 
     <!-- mobail menu -->
 
-    <div class="mobile-menu">
+    <div class="mobile-menu is-hidden" data-modal>
       <div class="container-mob-menu">
         <div class="container-top-mobail-menu">
           <address class="contacts-mobile-menu">
@@ -72,7 +72,7 @@
             >
           </address>
 
-          <button class="btn-mobaile-close" type="button">
+          <button class="btn-mobaile-close" type="button" data-modal-close>
             <svg class="img-btn-mobaile" width="36" height="36">
               <use href="/img/header/icons.svg#icon-x"></use>
             </svg>
@@ -80,16 +80,16 @@
         </div>
 
         <ul class="list-main-mobile-menu">
-          <li class="item-list-mobile-menu">
+          <li class="item-list-mobile-menu" href="#about-us">
             <a class="link-mobile-menu current" href="">About us</a>
           </li>
-          <li class="item-list-mobile-menu">
+          <li class="item-list-mobile-menu" href="#our-collection">
             <a class="link-mobile-menu" href="">Our collection</a>
           </li>
-          <li class="item-list-mobile-menu">
+          <li class="item-list-mobile-menu" href="#customer-order">
             <a class="link-mobile-menu" href="">CUSTOMER ORDER</a>
           </li>
-          <li class="item-list-mobile-menu">
+          <li class="item-list-mobile-menu" href="#testimonials-title">
             <a class="link-mobile-menu" href="">TEstimonials</a>
           </li>
         </ul>
