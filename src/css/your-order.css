@@ -47,7 +47,6 @@
 .yorder-title-accent {
   color: var(--yellow);
 }
-
 .yorger-wrap {
   margin-bottom: 20px;
 }
@@ -71,6 +70,7 @@
 .name-input:focus {
   border-color: rgba(252, 249, 249, 0.6);
   color: rgba(252, 249, 249, 1);
+  box-shadow: 5px 5px 10px 5px rgba(120, 120, 128, 0.3 );
 }
 /* .name-input:hover {
   border-color: rgba(252, 249, 249, 0.6);
@@ -91,6 +91,7 @@
 .comment-input:focus {
   border-color: rgba(252, 249, 249, 0.6);
   color: rgba(252, 249, 249, 1);
+  box-shadow: 5px 5px 10px 5px rgba(120, 120, 128, 0.3 );
 }
 /* .comment-input:hover {
   border-color: rgba(252, 249, 249, 0.6);
