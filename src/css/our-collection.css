@@ -50,11 +50,12 @@
   overflow: hidden;
   color: var(--white);
   text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
@@ -130,7 +131,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 
@@ -200,7 +201,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 
