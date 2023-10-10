@@ -224,6 +224,7 @@
     bottom: 145px;
     left: -82px;
     width: 289px;
+
     height: 484px;
     background-image: url('/img/your-order/element-desk1-min.png');
     z-index: 3;
@@ -315,5 +316,6 @@
   }
   .your-order .container::after {
     background-image: url('/img/your-order/element-tab-min.png');
+
   }
 }
