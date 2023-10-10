@@ -202,3 +202,7 @@
     letter-spacing: 0.05em;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  
+}
