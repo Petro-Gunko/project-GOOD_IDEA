@@ -70,9 +70,6 @@
   letter-spacing: 0.05em;
 }
 
-.dots-word-ending{
-  display: none;
-}
 
 @media screen and (min-width: 375px) {
   .container-ornament::after {
@@ -144,12 +141,6 @@
     line-height: 1;
     letter-spacing: 0.05em;
   }
-  .word-ending-ring {
-  display: none;
-  }
-  .dots-word-ending {
-    display: inline;
-  }
 }
 
 
@@ -218,10 +209,5 @@
 
 @media screen and (min-width: 1440px) {
 
-.word-ending-ring {
-  display: inline;
-  }
-.dots-word-ending {
-display: none;
-}
+
 }
