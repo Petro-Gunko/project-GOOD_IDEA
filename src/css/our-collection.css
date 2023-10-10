@@ -15,7 +15,7 @@
   content: '';
   background-image: url('/img/our_collection/ornament-mob-min.png');
   background-repeat: no-repeat;
-  top: 241px;
+  top: 220px;
   left: 0;
   z-index: -1;
 }
@@ -42,11 +42,12 @@
   padding-top: 18px;
 }
 
-.our-collection-list-item {
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
+.our-collection-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
 
 .our-collection-list-title {
   overflow: hidden;
@@ -78,9 +79,7 @@
     top: 307px;
   }
 
-  /* .our-collection-list-item {
- 
-  } */
+
 }
 
 @media screen and (min-width: 768px) {
