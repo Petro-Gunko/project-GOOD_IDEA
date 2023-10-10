@@ -38,12 +38,11 @@
   letter-spacing: -0.03em;
   text-align: left;
   color: var(--white);
- }
+} 
 
 .footer-text-yellow {
   color: var(--yellow);
 }
-
 
 
 .footer-container-main::after {
@@ -67,7 +66,9 @@
         list-style-type: none;
 
     }
-  
+    .footer-container-main {
+        padding: 40px;
+      }
     .footer-container-main::after{
       position: absolute;
       top: 0;
@@ -100,13 +101,13 @@
     transform: translateX(30%);
 }
 
-
 .footer-text{
   width: 754px;
   margin-top: 117px;
   font-size: 64px;
   line-height: 74px;
 }
+
 }
 @media screen and (min-width:1440px) {
   .footer-container-main::after{
