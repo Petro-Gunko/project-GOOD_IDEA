@@ -43,7 +43,8 @@
 }
 
 .our-collection-list-item {
-  margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
 }
 
 .our-collection-list-title {
@@ -54,7 +55,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
@@ -74,14 +75,14 @@
     top: 307px;
   }
 
-  .our-collection-list-item {
-    margin-bottom: 20px;
-  }
+  /* .our-collection-list-item {
+ 
+  } */
 }
 
 @media screen and (min-width: 768px) {
   .our-collection {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 
   .container-ornament::after {
@@ -111,22 +112,37 @@
     display: flex;
     flex-flow: row wrap;
     column-gap: 20px;
+    row-gap: 20px;
   }
 
   .our-collection-list-item {
-    width: calc((100% - 40px) / 2);
+    width: calc((100% - 20px) / 2);
   }
 
-  .our-collection-list-title {
+    .our-collection-list-title {
+      overflow: hidden;
+      color: var(--white);
+      text-overflow: ellipsis;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+  .point {
     width: 342px;
+    white-space: nowrap;
     overflow: hidden;
     color: var(--white);
     text-overflow: ellipsis;
     font-size: 18px;
+    overflow: hidden;
     font-style: normal;
     font-weight: 500;
     line-height: 1;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 
@@ -141,9 +157,12 @@
   }
 }
 
+
+
+
 @media screen and (min-width: 1280px) {
   .our-collection {
-    padding-bottom: 110px;
+    padding-bottom: 150px;
   }
 
   .container-ornament::after {
@@ -172,15 +191,14 @@
     max-width: 1280px;
     display: flex;
     column-gap: 20px;
+    row-gap: 40px;
   }
 
   .our-collection-list-item {
     width: calc((100% - 40px) / 3);
-    margin-bottom: 40px;
   }
 
   .our-collection-list-title {
-    width: 342px;
     overflow: hidden;
     color: var(--white);
     text-overflow: ellipsis;
@@ -188,7 +206,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 
@@ -203,6 +221,39 @@
   }
 }
 
+
+
 @media screen and (min-width: 1440px) {
-  
+  .container-ornament::after {
+    position: absolute;
+    display: flex;
+    min-width: 338px;
+    height: 300px;
+    content: '';
+    background-image: url('/img/our_collection/ornament-desktop2-min.png');
+    background-repeat: no-repeat;
+    top: 231px;
+    left: -80px;
+    z-index: -1;
+  }
+
+  .our-collection-list {
+    max-width: 1440px;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+
+    .our-collection-list-title {
+      overflow: hidden;
+      color: var(--white);
+      text-overflow: ellipsis;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
 }
