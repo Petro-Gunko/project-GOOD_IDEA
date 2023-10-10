@@ -45,12 +45,14 @@
 .our-collection-list-item {
    display: flex;
    flex-direction: column;
+   gap: 20px;
 }
 
 .our-collection-list-title {
   overflow: hidden;
   color: var(--white);
   text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -69,6 +71,7 @@
   line-height: 1;
   letter-spacing: 0.05em;
 }
+
 
 @media screen and (min-width: 375px) {
   .container-ornament::after {
@@ -158,8 +161,6 @@
 }
 
 
-
-
 @media screen and (min-width: 1280px) {
   .our-collection {
     padding-bottom: 150px;
@@ -222,7 +223,6 @@
 }
 
 
-
 @media screen and (min-width: 1440px) {
   .container-ornament::after {
     position: absolute;
@@ -244,16 +244,7 @@
     row-gap: 40px;
   }
 
-    .our-collection-list-title {
-      overflow: hidden;
-      color: var(--white);
-      text-overflow: ellipsis;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 1;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
+ 
 
 }
+
