@@ -1,6 +1,6 @@
 /* OUR-COLLECTION */
 .our-collection {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .container-ornament {
@@ -15,7 +15,7 @@
   content: '';
   background-image: url('/img/our_collection/ornament-mob-min.png');
   background-repeat: no-repeat;
-  top: 200px;
+  top: 241px;
   left: 0;
   z-index: -1;
 }
@@ -76,7 +76,7 @@
 
 @media screen and (min-width: 375px) {
   .container-ornament::after {
-    top: 260px;
+    top: 307px;
   }
 
 
@@ -95,7 +95,7 @@
     content: '';
     background-image: url('/img/our_collection/ornament-tab-min.png');
     background-repeat: no-repeat;
-    top: 160px;
+    top: 225px;
     left: 0;
     z-index: -1;
   }
@@ -171,7 +171,7 @@
     content: '';
     background-image: url('/img/our_collection/ornament-min.png');
     background-repeat: no-repeat;
-    top: 160px;
+    top: 225px;
     left: -80px;
     z-index: -1;
   }
@@ -227,7 +227,7 @@
     content: '';
     background-image: url('/img/our_collection/ornament-desktop2-min.png');
     background-repeat: no-repeat;
-    top: 160px;
+    top: 230px;
     left: -80px;
     z-index: -1;
   }
