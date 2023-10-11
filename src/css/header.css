@@ -55,13 +55,122 @@
   margin-left: 12px;
 }
 
+
+/* mobail menu */
+
+.mobile-menu {
+  width: 275px;
+  background-color: var(--yellow);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-image: url(/img/header/ornament-mob-menu.png);
+  background-position: 50% 570px;
+  background-repeat: no-repeat;
+  background-size: 395px 380px;
+  z-index: 10;
+}
+.container-mob-menu {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.container-top-mobail-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 186px;
+}
+.contacts-mobile-menu {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid rgba(28, 34, 37, 0.1);
+}
+
+.link-contacts-mobile {
+  padding: 12px 20px;
+  color: var(--black);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17; /* 116.667% */
+  text-transform: uppercase;
+}
+
+.btn-mobaile-close {
+  border: none;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  background-color: var(--yellow);
+  stroke: var(--black);
+}
+
+.list-main-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.item-list-mobile-menu {
+  color: #1c2225;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.29; /* 128.571% */
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px) {
   .open-mobile-menu-icon {
     width: 44px;
     height: 30px;
     margin-left: 20px;
   }
+
+  /* mobail menu */
+
+.mobile-menu {
+  width: 380px;
 }
+
+.container-mob-menu {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 32px;
+}
+
+.btn-mobaile-close {
+  width: 44px;
+  height: 44px;
+}
+.link-contacts-mobile {
+  padding: 14px 28px;
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.43;
+  text-transform: uppercase;
+}
+}
+
 
 @media screen and (min-width: 1280px) {
   .header {
@@ -151,115 +260,7 @@
     border: none;
     cursor: pointer;
   }
-}
 
-/* mobail menu */
-
-.mobile-menu {
-  width: 275px;
-  background-color: var(--yellow);
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%;
-
-  background-image: url(/img/header/ornament-mob-menu.png);
-  background-position: 50% 570px;
-  background-repeat: no-repeat;
-  background-size: 395px 380px;
-  z-index: 10;
-}
-.container-mob-menu {
-  width: 100%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px 32px;
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.container-top-mobail-menu {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 186px;
-}
-.contacts-mobile-menu {
-  display: flex;
-  align-items: center;
-  border-radius: 15px;
-  border: 1px solid rgba(28, 34, 37, 0.1);
-}
-
-.link-contacts-mobile {
-  padding: 12px 20px;
-  color: var(--black);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.17; /* 116.667% */
-  text-transform: uppercase;
-}
-
-.btn-mobaile-close {
-  border: none;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  cursor: pointer;
-  background-color: var(--yellow);
-  stroke: var(--black);
-}
-
-.list-main-mobile-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  gap: 20px;
-}
-
-.item-list-mobile-menu {
-  color: #1c2225;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px; /* 128.571% */
-  text-transform: uppercase;
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    width: 380px;
-  }
-  
-  .container-mob-menu {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .btn-mobaile-close {
-    width: 44px;
-    height: 44px;
-  }
-  .link-contacts-mobile {
-    padding: 14px 28px;
-    color: var(--black);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.43;
-    text-transform: uppercase;
-  }
-}
-@media screen and (min-width: 1280px) {
   .mobile-menu {
     display: none;
   }
